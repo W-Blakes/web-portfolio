@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/site.webmanifest" />
+  </head>
+  <body onload="loadScreen()">
+    <!-- HERO SECTION  -->
+
+    <section class="hero-section thanks" id="home">
+        <div class="w-logo-container load" id="load">
+            <div class="w-logo load" id="load_logo"></div>
+            <div class="load-text">
+              <span><p class="thinking">Thinking</p></span>
+              <span class="dot a"></span>
+              <span class="dot b"></span>
+              <span class="dot c"></span>
+            </div>
+          </div>
+      <div class="quick-select-btn">
+        <i id="quick-menu-btn" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="close hide">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="hero-content">
+        <h1>
+          Thanks for Reaching Out!<br />
+          talk to you soon.
+        </h1>
+        <button class="hero-btn thanks" style="margin-top: 2rem;" id="homepage">
+            <a href="/index.html"
+            ><i class="fa-solid fa-caret-left"></i>Home<a>
+        </button>
+      </div>
+
+         <!-- NAV SECTION  -->
+ 
+   
+   <div class="quick-select hidden hide" id="quick-nav">
+    <ul class="quick-links">
+        <li style="display: none;"><a onload="loadScreen()" href="/index.html#about"><i class="fa-solid fa-user"></i>about</a></li>
+        <li><a onload="loadScreen()" href="/index.html#about"><i class="fa-solid fa-user"></i>about</a></li>
+       <li><a onload="loadScreen()" href="/index.html#skills"><i class="fa-solid fa-microchip"></i>skills</a></li>
+       <li><a onload="loadScreen()" href="/index.html#portfolio"><i class="quick fa-solid fa-briefcase"></i>porfolio</a></li>
+       <li><a onload="loadScreen()" href="/index.html#contact"><i class="fa-solid fa-paper-plane"></i>contact</a></li>
+     <li><a onload="loadScreen()" href="/index.html#"><i class="fa-solid fa-file"></i>resume</a></li>
+   </ul>
+   <div class="style-line"></div>
+  </div>
+
+  <nav id="nav" style="display: none;">
+    <ul class="text hide">
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li ><a href="#contact">contact</a></li>
+    </ul>
+    <ul class="icons">
+      <li><a href="#home"><i class="fa-solid fa-house-chimney"></i></a></li>
+      <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
+      <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i></a></li>
+      <li ><a href="#contact"><i class="fa-solid fa-paper-plane"></i></a></li>
+    </ul>
+  </nav>
+      
+      <div class="info">
+      <div class="page-break top"></div>
+      <div class="page-break-border top"></div>
+    </section>
+
+   
+  </body>
+  <script src="/script.js"></script>
+</html>

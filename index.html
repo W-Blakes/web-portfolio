@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/site.webmanifest" />
+  </head>
+
+  <body onload="loadScreen()">
+    <!-- HERO SECTION  -->
+
+    <section class="hero-section " id="home" >
+      <div class="w-logo-container load" id="load">
+        <div class="w-logo load" id="load_logo"></div>
+        <div class="load-text">
+          <span><p class="thinking">Thinking</p></span>
+          <span class="dot a"></span>
+          <span class="dot b"></span>
+          <span class="dot c"></span>
+        </div>
+      </div>
+      <div class="quick-select-btn">
+        <i id="quick-menu-btn" class="fa-solid fa-bars"></i>
+      </div>
+      <div class="close hide">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="hero-content">
+        <h1>
+          Hello I'm <span><a href="#about">William Blakes</a></span>. <br />
+          I'm a web developer
+        </h1>
+        <button class="hero-btn"><a href="#about">view my work<i class="fa-solid fa-caret-right"></i></a> </button>
+      </div>
+      <div class="page-break top"></div>
+      <div class="page-break-border top"></div>
+    </section>
+
+   <!-- NAV SECTION  -->
+ 
+   
+   <div class="quick-select hidden hide" id="quick-nav">
+     <ul class="quick-links">
+        <li><a onclick="queLoadScreen()"  href="#about"><i class="fa-solid fa-user"></i>about</a></li>
+        <li><a onclick="queLoadScreen()"  href="#skills"><i class="fa-solid fa-microchip"></i>skills</a></li>
+        <li><a onclick="queLoadScreen()"  href="#portfolio"><i class="quick fa-solid fa-briefcase"></i>portfolio</a></li>
+        <li><a onclick="queLoadScreen()"  href="#contact"><i class="fa-solid fa-paper-plane"></i>contact</a></li>
+      <li><a onclick="queLoadScreen()"  href="/images/wblake_resume.pdf"><i class="fa-solid fa-file"></i>resume</a></li>
+    </ul>
+    <div class="style-line"></div>
+   </div>
+
+    <nav id="nav">
+      <ul class="text hide">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li ><a href="#contact">contact</a></li>
+      </ul>
+      <ul class="icons">
+        <li><a href="#home"><i class="fa-solid fa-house-chimney"></i></a></li>
+        <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i></a></li>
+        <li ><a href="#contact"><i class="fa-solid fa-paper-plane"></i></a></li>
+      </ul>
+    </nav>
+
+        <!-- INFO Section -->
+        <div class="about">
+          <h1>about</h1>
+        </div>
+    <section class="info-section">
+    
+    <!-- Profile Section -->
+    <section class="about-container" id="about">
+      <h1>about</h1>
+        <div class="profile">
+         <div class="profile-pic" id="profile-pic"></div>
+            <div class="profile-pic-rings">
+
+              <div class="pic-border-mask1"></div>
+              <div class="pic-border1"></div>
+      
+              <div class="pic-border-mask2" id="pic-rings"></div>
+              <div class="pic-border2"></div>
+
+              <div class="hobbies">
+                <div class="hobby">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="hobby">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="hobby">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="hobby">
+                  <i class="fa-solid fa-ticket"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <p class="profile-text">
+        <span>A little bit about myself</span>
+       I'm a freelance web developer in Altanta Ga., with a background in fine art, graphic design and animation. I enjoy creating products, solving problems and helping clients bring their vision to life.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section class="skills-container" id="skills">
+      <div class="skills">
+
+        <div class="skill">
+          <div class="skill-name"><p>CSS</p></div>
+          <div class="skill-bar">
+            <div class="skill-level css"></div>
+        </div>
+        <div class="percentage">80%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name"><p>HTML</p></div>
+          <div class="skill-bar">
+            <div class="skill-level html"></div>
+        </div>
+        <div class="percentage">75%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name"><p>JavaScript</p></div>
+          <div class="skill-bar">
+            <div class="skill-level js"></div>
+        </div>
+        <div class="percentage">70%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name"><p>Node JS</p></div>
+          <div class="skill-bar">
+            <div class="skill-level node"></div>
+        </div>
+        <div class="percentage">65%</div>
+        </div>
+        
+        <div class="skill">
+          <div class="skill-name"><p>React</p></div>
+          <div class="skill-bar">
+            <div class="skill-level react"></div>
+        </div>
+        <div class="percentage">65%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name"><p>Illustator</p></div>
+          <div class="skill-bar">
+            <div class="skill-level illus"></div>
+        </div>
+        <div class="percentage">85%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name"><p>Photoshop</p></div>
+          <div class="skill-bar">
+            <div class="skill-level photo"></div>
+        </div>
+        <div class="percentage">75%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name"><p>3Ds Max</p></div>
+          <div class="skill-bar">
+            <div class="skill-level max"></div>
+        </div>
+        <div class="percentage">85%</div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+   </section>
+
+   <!-- QUALITY SECTION  -->
+
+   <section class="qualities-container" id="qualities">
+    <div class="quality">
+       <i class="fa-solid fa-screwdriver-wrench"></i>
+        <p class="quality-name">Analytical</p>
+            <p class="quality-text">Detect design patterns and make logical decisions for an optimal outcome</p>
+    </div>
+
+    <div class="quality">
+      <i class="fa-solid fa-gear"></i>
+        <p class="quality-name">Functional</p>
+            <p class="quality-text">Focus on the utility and the practicality of programming needs</p>
+    </div>
+
+    <div class="quality">
+      <i class="fa-solid fa-jet-fighter"></i>
+        <p class="quality-name">Dynamic</p>
+            <p class="quality-text">Transform static user interfaces into engaging, responsive and memorable experiences </p>
+    </div>
+
+    <div class="quality">
+      <i class="fa-solid fa-lightbulb"></i>
+        <p class="quality-name">Intuitive</p>
+            <p class="quality-text">Determine the best approach to solve problems based on time constraints, resources and overall objective</p>
+    </div>
+
+   </section>
+
+   <!-- PORTFOLIO SECTION -->
+
+   <!-- OVERLAY -->
+   <div class="showcase">
+     <!-- OVERLAY IMG-->
+     <div class="project-overlay">
+       <h4 class="project-overlay-name">Project Title </h4>
+       <div class="details">
+           <i class="fa-solid fa-circle-info"></i>
+           <i class="fa-regular fa-circle-xmark"></i>
+       </div>
+       <div class="show-nav">
+        <i class="fa-solid fa-circle-arrow-left"></i>
+        <i class="fa-solid fa-circle-arrow-right"></i>
+       </div>
+        <p class="project-overlay-description"><span>JavaScript</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illo voluptates perspiciatis?
+          <a href="#">Go to site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </p>
+            <div class="img-container">
+               <img src="" alt="" style="object-fit: fit;">
+            </div>
+    </div>
+   <!-- OVERLAY BG-->
+    <div class="project-bg-overlay">
+    </div>
+  </div>
+   <section class="portfolio-section" id="portfolio">
+     <h1>portfolio </h1>
+     <p class="project-text">Have a look at some of my latest work. Click to learn more about them.</p>
+
+     
+    <!-- PROJECTS  -->
+      <div class="projects-container" id="projects">    
+      </div>
+      <div class="gallery-end">
+        <div class="page-break bottom"></div>
+        <div class="page-break-border bottom"></div>
+      </div>
+   </section>
+
+
+    <!-- CONTACT SECTION  -->
+
+    <section class="contact-section" id="contact">
+      <h1>contact me</h1>
+      <p class="contact-text">Let's build something special!</p>
+      <form class="contact-form" action="https://formsubmit.co/swblakes@gmail.com" method="POST">
+        <input
+          class="form-control name-in"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <div class="bar name-bar"></div>
+        <input
+          class="form-control email-in"
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+        />
+        <div class="bar email-bar"></div>
+        <textarea
+          class="form-control message"
+          name="message"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <div class="bar msg-bar"></div>
+  
+        <button class="contact-btn" type="submit">Submit</button>
+
+        <input type="hidden" name="_next" value="https://williamblakes.com/views/thanks.html">
+  
+        <!-- _captcha -->
+        <input type="hidden" name="_captcha" value="false">
+  
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_template" value="box">
+      </form>
+      <div class="big-text"><i class="fa-solid fa-paper-plane"></i></div>
+    </section>
+
+    <!-- FOOTER SECTION  -->
+
+    <footer class="footer-section" id="footer">
+      <div class="footer-content">
+        <div class="home-btn">
+          <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+        </div>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/william-blakes-28380b248"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://facebook.com/wblakes"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/blakesart"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="info">
+          <div class="footnote">William Blakes <span>©2022</span></div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  <script src="script.js"></script>
+</html>
