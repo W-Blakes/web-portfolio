@@ -2,9 +2,9 @@
 2022 Web Developer Portfolio
 
 Created with Javascript, Html and CSS, this was my second attempt at showcasing all of the skills learned in Web Development Bootcamp. It's filled with CSS styled animations and hover/ on-click transitions. 
-I used Javascript to help with page navigation and templating detailed project views. 
+I used Javascript to help with page navigation and templating detailed project views.
 
-I will archive this version and release an updated 2024 Portfolio in React or Django.
+I will archive this version and release an updated 2024 Portfolio in React.
 
 <img src='https://github.com/W-Blakes/web-portfolio/assets/90099032/ae3a7525-af70-4db9-a814-4d025c25ad9f' style='widht: 400px'>
 <img src='https://github.com/W-Blakes/web-portfolio/assets/90099032/6b4625eb-452e-4a44-b688-65b6b0afe0e4' style='widht: 400px'>
